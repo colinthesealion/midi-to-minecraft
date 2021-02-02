@@ -23,7 +23,7 @@ The second stage uses [scarpet](https://github.com/gnembon/scarpet) to place a s
 Once the script is installed, in your minecraft world, with OP:
 ```
 \script load build_song
-\script invokepoint ~ ~ ~ [filename] [y-offset]
+\script invokepoint build_song ~ ~ ~ [filename] [y-offset]
 ```
 Where `filename` is the name of the JSON file without the `.json` extension and `y-offset` is how far from the player vertically you would like to build the contraption (negative values for beneath the player are typical). This value is useful in order to ensure that the player can hear a contraption built underground.
 
