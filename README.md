@@ -1,4 +1,4 @@
-# midi-to-miinecrart
+# midi-to-minecraft
 
 Convert a `.midi` file into a series of note blocks.
 
