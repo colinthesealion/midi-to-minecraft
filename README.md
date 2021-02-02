@@ -25,7 +25,7 @@ Once the script is installed, in your minecraft world, with OP:
 \script load build_song
 \script invokepoint ~ ~ ~ [filename] [y-offset]
 ```
-Where `filename` is the name of the JSON file without the `.json` extension and `y-offset` is how far beneath the player you would like to build the contraption.
+Where `filename` is the name of the JSON file without the `.json` extension and `y-offset` is how far from the player vertically you would like to build the contraption (negative values for beneath the player are typical).
 
 ## Known Issues
 * Midi files can have up to 16 simultaneous sounds; currently only 2 of them will play at once
