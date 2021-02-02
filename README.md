@@ -25,9 +25,10 @@ Once the script is installed, in your minecraft world, with OP:
 \script load build_song
 \script invokepoint ~ ~ ~ [filename] [y-offset]
 ```
-Where `filename` is the name of the JSON file without the `.json` extension and `y-offset` is how far from the player vertically you would like to build the contraption (negative values for beneath the player are typical).
+Where `filename` is the name of the JSON file without the `.json` extension and `y-offset` is how far from the player vertically you would like to build the contraption (negative values for beneath the player are typical). This value is useful in order to ensure that the player can hear a contraption built underground.
 
 ## Known Issues
 * Midi files can have up to 16 simultaneous sounds; currently only 2 of them will play at once
 * The shape of the redstone contraption should be more or less a sphere, but currently the starting point is not accurately calculated
 * The repeat mode lever does not work without adding some redstone wire between the end and the start of the song
+* We use 45 as the radius that the player can hear a note block, rather than the actual value of 48. This radius should be parameterized.
