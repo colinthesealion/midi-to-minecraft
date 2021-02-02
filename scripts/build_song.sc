@@ -172,7 +172,6 @@ _set_repeat_toggle(x, y, z, dx, dy, dz) -> (
     ));
     set(x, y + dy + 3, z - 2, 'redstone_lamp');
     set(x, y + dy + 4, z - 2, 'lever', 'face', 'floor', 'facing', 'east');
-    exit();
 );
 
 _set_note(x, y, z, note) -> (
@@ -261,6 +260,7 @@ _set_corner_delay(x, y, z, delay, dx, dz, n_dust) -> (
     );
 
     z = _set_n_dust(x, y, z, dz, n_dust);
+    set(x, y, z, 'polished_granite');
     l(x, z);
 );
 
@@ -282,10 +282,7 @@ _set_down_delay(x, y, z, delay, dx, dz, n_dust) -> (
     _set_dust(x, y, z);
     z += dz;
     z = _set_straight_delay(x, y, z, delay, dz);
-    c_for(i = 0, i < n_dust, i += 1, (
-        _set_dust(x, y, z);
-        z += dz;
-    ));
+    z = _set_n_dust(x, y, z, dz, n_dust);
     set(x, y, z, 'polished_granite');
     l(y, z);
 );
