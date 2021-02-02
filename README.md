@@ -18,9 +18,7 @@ Options:
   -h, --help     Show help                                             [boolean]
 ```
 
-The second stage uses [scarpet](https://github.com/gnembon/scarpet) to place a series of blocks in your world to execute the series of note blocks as a redstone contraption.
-To complete this stage, you will need to install the `scripts/build_song.sc` scarpet app in your world. To do so, please see the [documentation](https://github.com/gnembon/fabric-carpet/wiki/Installing-carpet-scripts-in-your-world).
-You will also need to move the JSON file into `.minecraft/config/carpet/scripts/shared/`.
+The second stage uses [scarpet](https://github.com/gnembon/scarpet) to place a series of blocks in your world to execute the series of note blocks as a redstone contraption. To complete this stage, you will need to [install](https://github.com/gnembon/fabric-carpet/wiki/Installing-carpet-scripts-in-your-world) the `scripts/build_song.sc` scarpet app in your world. You will also need to move the JSON file into `.minecraft/config/carpet/scripts/shared/`.
 
 Once the script is installed, in your minecraft world, with OP:
 ```
