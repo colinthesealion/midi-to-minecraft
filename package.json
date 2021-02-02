@@ -1,0 +1,65 @@
+{
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test --passWithNoTests",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build",
+    "size": "size-limit",
+    "analyze": "size-limit --why",
+    "main": "node dist/index.js"
+  },
+  "peerDependencies": {
+    "react": ">=16"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "name": "midi-to-minecraft",
+  "author": "colin.barringer@icloud.com",
+  "module": "dist/midi-to-minecraft.esm.js",
+  "size-limit": [
+    {
+      "path": "dist/midi-to-minecraft.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/midi-to-minecraft.esm.js",
+      "limit": "10 KB"
+    }
+  ],
+  "devDependencies": {
+    "@size-limit/preset-small-lib": "^4.9.1",
+    "@types/react": "^17.0.0",
+    "husky": "^4.3.8",
+    "react": "^17.0.1",
+    "size-limit": "^4.9.1",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.1.0",
+    "typescript": "^4.1.3"
+  },
+  "dependencies": {
+    "@tonejs/midi": "^2.0.25",
+    "midifile-ts": "^1.1.4",
+    "yargs": "^16.2.0"
+  }
+}
