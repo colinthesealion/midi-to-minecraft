@@ -3,7 +3,7 @@
 Convert a `.midi` file into a series of note blocks.
 
 ## Requirements
-[fabric-carpet](https://github.com/gnembon/fabric-carpet) >= 1.4
+[fabric-carpet](https://github.com/gnembon/fabric-carpet) >= 1.4.22
 
 ## Usage
 
