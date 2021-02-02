@@ -32,3 +32,4 @@ Where `filename` is the name of the JSON file without the `.json` extension and 
 * The shape of the redstone contraption should be more or less a sphere, but currently the starting point is not accurately calculated
 * The repeat mode lever does not work without adding some redstone wire between the end and the start of the song
 * We use 45 as the radius that the player can hear a note block, rather than the actual value of 48. This radius should be parameterized.
+* JSON filenames do not support the space character. This is a limitation in fabric-carpet.
