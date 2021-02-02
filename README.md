@@ -30,6 +30,6 @@ Where `filename` is the name of the JSON file without the `.json` extension and 
 ## Known Issues
 * Midi files can have up to 16 simultaneous sounds; currently only 2 of them will play at once, the others will be ignored.
 * The shape of the redstone contraption should be more or less the lower half of a sphere, but currently the starting point is not accurately calculated.
-* The repeat mode lever does not work without adding some redstone wire between the end and the start of the song. These blocks should also be placed by the carpet app.
+* The repeat mode lever does not work without adding some redstone wire between the end and the start of the song. These blocks should also be placed by the scarpet app.
 * We use 45 as the radius that the player can hear a note block, rather than the actual value of 48. This radius should be parameterized.
 * JSON filenames do not support the space character. This is a limitation in fabric-carpet.
