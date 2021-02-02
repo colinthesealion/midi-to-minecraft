@@ -41,6 +41,6 @@ else {
             `${name}.${i}${ext}`
         );
         fs.writeFileSync(filename, JSON.stringify(blockSequence, undefined, 2));
-        console.log(`Note blopck sequence for track ${i + 1} written to ${filename}`);
+        console.log(`Note block sequence for track ${i + 1} written to ${filename}`);
     });
 }
